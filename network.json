@@ -53,8 +53,11 @@
         },
         {
             "name": "Histogram_pop.png"
+        },
+        {
+            "name": "Histogram_Murder.png"
         }
     ],
-    "updated_at": "2018-10-11 05:04:01",
+    "updated_at": "2018-10-11 05:06:33",
     "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
 }
