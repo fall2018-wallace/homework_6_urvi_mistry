@@ -33,16 +33,6 @@
                 }
             ],
             "source": "merge.R",
-            "target": "Histogram_pop.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "CombinedData",
-                    "type": "png"
-                }
-            ],
-            "source": "merge.R",
             "target": "Histogram_Murder.png"
         },
         {
@@ -72,15 +62,12 @@
             "task_status": "in progress"
         },
         {
-            "name": "Histogram_pop.png"
-        },
-        {
             "name": "Histogram_Murder.png"
         },
         {
             "name": "Histogram_Assault.png"
         }
     ],
-    "updated_at": "2018-10-11 05:07:08",
+    "updated_at": "2018-10-11 05:07:54",
     "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
 }
