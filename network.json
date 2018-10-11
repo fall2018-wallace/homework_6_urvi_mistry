@@ -40,8 +40,11 @@
             "desc": "",
             "name": "merge.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "Histogram_pop.png"
         }
     ],
-    "updated_at": "2018-10-11 05:02:56",
+    "updated_at": "2018-10-11 05:03:39",
     "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
 }
