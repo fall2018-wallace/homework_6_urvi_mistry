@@ -11,8 +11,8 @@ Histogram_PopOver18 <- ggplot(data,aes(x=popover18))+geom_histogram(bins=5,fill=
 Histogram_Rape <- ggplot(data,aes(x=Rape))+geom_histogram(bins=15,fill="yellow", color="black") +labs(x="Rape") + ggtitle("Histogram for Rape Rate") ##displayed a histogram using ggplot and obtimizing number of bins to 15 to resolve gaps in bins
 
 #5)	Create a boxplot for the population, and a different boxplot for the murder rate.
-ggplot(data = CombinedData,aes(x=factor(0),population)) + geom_boxplot() + labs(title="Box Plot for Population",x="Factors", y="Population") #displayed a box plot with factoring the data for x axis along with population on x axis
-ggplot(data = CombinedData,aes(x=factor(0),Murder)) + geom_boxplot() + labs(title="Box Plot for Murder Rate",x="Factors", y="Murder Rate") #displayed a box plot with factoring the data for x axis along with Murder rate on x axis
+ggplot(data,aes(x=factor(0),population)) + geom_boxplot() + labs(title="Box Plot for Population",x="Factors", y="Population") #displayed a box plot with factoring the data for x axis along with population on x axis
+ggplot(data,aes(x=factor(0),Murder)) + geom_boxplot() + labs(title="Box Plot for Murder Rate",x="Factors", y="Murder Rate") #displayed a box plot with factoring the data for x axis along with Murder rate on x axis
 
 #6)	Create a block comment explaining which visualization (boxplot or histogram) you thought was more helpful (explain why)
 #Histogram provided a better visualization in this case because the box plot is little difficut to read, also outlier points in box plot make it confusing and difficut to understand.
