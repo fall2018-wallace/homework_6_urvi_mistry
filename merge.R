@@ -19,20 +19,20 @@ ggplot(data,aes(x=factor(0),Murder)) + geom_boxplot() + labs(title="Box Plot for
 #For such a simple data, a simple histogram is the best way without complicating the data
 
 #7)	Calculate the number of murders per state
-CombinedData$numMurders <- CombinedData$population*CombinedData$Murder/100000 #Calculate the number of murders
-CombinedData
+data$numMurders <- data$population*data$Murder/100000 #Calculate the number of murders
+data
 
 #8)	Generate a bar chart, with the number of murders per state
-ggplot(data = CombinedData, aes(x=statename, y=numMurders)) + geom_col() + ggtitle("Bar Chart for Murders per state") #display a bar chart with statename on x axis and number of murder on y axis
+ggplot(data, aes(x=statename, y=numMurders)) + geom_col() + ggtitle("Bar Chart for Murders per state") #display a bar chart with statename on x axis and number of murder on y axis
 
 #9)	Generate a bar chart, with the number of murders per state. Rotate text (on the X axis), so we can see x labels, also add a title named “Total Murders”.
-ggplot(data = CombinedData, aes(x=statename, y=numMurders)) + geom_col() + ggtitle("Total Murders") + theme(axis.text.x = element_text(angle = 90, hjust = 1))  #adjusted the label tags on x axis by rotating them 90 degrees and setting horizontal adjustment to 1
+ggplot(data, aes(x=statename, y=numMurders)) + geom_col() + ggtitle("Total Murders") + theme(axis.text.x = element_text(angle = 90, hjust = 1))  #adjusted the label tags on x axis by rotating them 90 degrees and setting horizontal adjustment to 1
 
 #10) Generate a new bar chart, the same as in the previous step, but also sort the x-axis by the murder rate
-ggplot(data = CombinedData, aes(x=reorder(statename,Murder), y=numMurders, group = 1)) + geom_col() + ggtitle("Total Murders") + theme(axis.text.x = element_text(angle = 90, hjust = 1))  #used reorder function to sort statename by murder rate
+ggplot(data, aes(x=reorder(statename,Murder), y=numMurders, group = 1)) + geom_col() + ggtitle("Total Murders") + theme(axis.text.x = element_text(angle = 90, hjust = 1))  #used reorder function to sort statename by murder rate
 
 #11)	 Generate a third bar chart, the same as the previous step, but also showing percentOver18 as the color of the bar
-ggplot(data = CombinedData, aes(x=reorder(statename,Murder), y=numMurders, fill=percentover18)) + geom_col() + ggtitle("Total Murders") + theme(axis.text.x = element_text(angle = 90, hjust = 1)) #used fill attribute to adjust the colors of the bar char by data of percentover18
+ggplot(data, aes(x=reorder(statename,Murder), y=numMurders, fill=percentover18)) + geom_col() + ggtitle("Total Murders") + theme(axis.text.x = element_text(angle = 90, hjust = 1)) #used fill attribute to adjust the colors of the bar char by data of percentover18
 
 #12)	Generate a scatter plot – have population on the X axis, the percent over 18 on the y axis, and the size & color represent the murder rate
-ggplot(data=CombinedData,aes(x=population,y=percentover18)) + geom_point(aes(size=Murder,color=Murder)) #displayed scatter plot using geom-point() and used aes in that to denote the color and size of the scatter plot points to murder rate
+ggplot(data,aes(x=population,y=percentover18)) + geom_point(aes(size=Murder,color=Murder)) #displayed scatter plot using geom-point() and used aes in that to denote the color and size of the scatter plot points to murder rate
