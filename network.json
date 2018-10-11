@@ -134,6 +134,16 @@
             ],
             "source": "merge.R",
             "target": "Bar_Murder4.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Scatter_Pop",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Scatter_Pop.png"
         }
     ],
     "nodes": [
@@ -188,6 +198,6 @@
             "name": "Scatter_Pop.png"
         }
     ],
-    "updated_at": "2018-10-11 05:27:50",
+    "updated_at": "2018-10-11 05:27:56",
     "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
 }
