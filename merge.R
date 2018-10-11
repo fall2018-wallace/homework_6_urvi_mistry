@@ -35,4 +35,4 @@ Bar_Murder3 <- ggplot(CombinedData, aes(x=reorder(statename,Murder), y=numMurder
 Bar_Murder4 <- ggplot(data, aes(x=reorder(statename,Murder), y=numMurders, fill=percentover18)) + geom_col() + ggtitle("Total Murders") + theme(axis.text.x = element_text(angle = 90, hjust = 1)) #used fill attribute to adjust the colors of the bar char by data of percentover18
 
 #12)	Generate a scatter plot – have population on the X axis, the percent over 18 on the y axis, and the size & color represent the murder rate
-ggplot(data,aes(x=population,y=percentover18)) + geom_point(aes(size=Murder,color=Murder)) #displayed scatter plot using geom-point() and used aes in that to denote the color and size of the scatter plot points to murder rate
+Scatter_Pop <- ggplot(data,aes(x=population,y=percentover18)) + geom_point(aes(size=Murder,color=Murder)) #displayed scatter plot using geom-point() and used aes in that to denote the color and size of the scatter plot points to murder rate
