@@ -44,6 +44,16 @@
             ],
             "source": "merge.R",
             "target": "Histogram_Murder.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Histogram_Assault",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Histogram_Assault.png"
         }
     ],
     "nodes": [
@@ -71,6 +81,6 @@
             "name": "Histogram_Assault.png"
         }
     ],
-    "updated_at": "2018-10-11 05:24:19",
+    "updated_at": "2018-10-11 05:24:26",
     "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
 }
