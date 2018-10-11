@@ -24,16 +24,6 @@
             ],
             "source": "clean.R",
             "target": "merge.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "CombinedData",
-                    "type": "png"
-                }
-            ],
-            "source": "merge.R",
-            "target": "Histogram_Assault.png"
         }
     ],
     "nodes": [
@@ -50,11 +40,8 @@
             "desc": "",
             "name": "merge.R",
             "task_status": "in progress"
-        },
-        {
-            "name": "Histogram_Assault.png"
         }
     ],
-    "updated_at": "2018-10-11 05:07:58",
+    "updated_at": "2018-10-11 05:08:05",
     "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
 }
