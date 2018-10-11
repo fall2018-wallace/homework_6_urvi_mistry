@@ -1,3 +1,4 @@
 
+popdata <- CensusData
 arrests <- USArrests
-CombinedData <- merge(CensusData,arrests,by.x = "statename",by.y = 0)
+CombinedData <- merge(popdata,arrests,by.x = "statename",by.y = 0)
