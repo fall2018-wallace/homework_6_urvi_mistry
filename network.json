@@ -74,6 +74,16 @@
             ],
             "source": "merge.R",
             "target": "Histogram_Rape.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Box_Pop",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Box_Pop.png"
         }
     ],
     "nodes": [
@@ -110,6 +120,6 @@
             "name": "Box_Pop.png"
         }
     ],
-    "updated_at": "2018-10-11 05:25:27",
+    "updated_at": "2018-10-11 05:25:33",
     "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
 }
