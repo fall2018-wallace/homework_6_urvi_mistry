@@ -36,10 +36,15 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "urvi15mistry",
             "desc": "",
-            "name": "Combine.R"
+            "name": "Combine.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "USArrests.csv"
         }
     ],
-    "updated_at": "2018-10-11 04:19:27",
+    "updated_at": "2018-10-11 04:21:00",
     "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
 }
