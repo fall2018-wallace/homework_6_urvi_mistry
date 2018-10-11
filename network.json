@@ -13,17 +13,6 @@
             ],
             "source": "scprc_est_2017_18_pop_res.csv",
             "target": "clean.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "CensusData",
-                    "output": "clean_data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean.R",
-            "target": "Combine.R"
         }
     ],
     "nodes": [
@@ -34,14 +23,8 @@
             "assigned_to": "urvi15mistry",
             "name": "clean.R",
             "task_status": "in progress"
-        },
-        {
-            "assigned_to": "urvi15mistry",
-            "desc": "",
-            "name": "Combine.R",
-            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-11 04:50:35",
+    "updated_at": "2018-10-11 04:52:53",
     "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
 }
