@@ -1,0 +1,203 @@
+{
+    "collaborators": [
+        "urvi15mistry"
+    ],
+    "created_at": "2018-10-11 04:09:32",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "scprc_est_2017_18_pop_res.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "clean_data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "merge.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Histogram_pop",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Histogram_pop.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Histogram_Murder",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Histogram_Murder.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Histogram_Assault",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Histogram_Assault.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Histogram_PopOver18",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Histogram_PopOver18.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Histogram_Rape",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Histogram_Rape.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Box_Pop",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Box_Pop.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Box_Murder",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Box_Murder.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Bar_Murder",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Bar_Murder.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Bar_Murder2",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Bar_Murder2.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Bar_Murder3",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Bar_Murder3.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Bar_Murder4",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Bar_Murder4.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Scatter_Pop",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Scatter_Pop.png"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "scprc_est_2017_18_pop_res.csv"
+        },
+        {
+            "assigned_to": "urvi15mistry",
+            "name": "clean.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "urvi15mistry",
+            "desc": "",
+            "name": "merge.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "Histogram_pop.png"
+        },
+        {
+            "name": "Histogram_Murder.png"
+        },
+        {
+            "name": "Histogram_Assault.png"
+        },
+        {
+            "name": "Histogram_PopOver18.png"
+        },
+        {
+            "name": "Histogram_Rape.png"
+        },
+        {
+            "name": "Box_Pop.png"
+        },
+        {
+            "name": "Box_Murder.png"
+        },
+        {
+            "name": "Bar_Murder.png"
+        },
+        {
+            "name": "Bar_Murder2.png"
+        },
+        {
+            "name": "Bar_Murder3.png"
+        },
+        {
+            "name": "Bar_Murder4.png"
+        },
+        {
+            "name": "Scatter_Pop.png"
+        }
+    ],
+    "updated_at": "2018-10-11 05:27:56",
+    "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
+}
