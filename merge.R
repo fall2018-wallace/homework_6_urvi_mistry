@@ -1,8 +1,10 @@
 
 library("ggplot2")
+#2)	Copy the USArrests dataset into a local variable (similar to HW 2)
 arrests <- USArrests
 arrests
-CombinedData <- merge(data,arrests,by.x = "statename",by.y = 0)
+#3)	Create a merged dataframe -- with the attributes from both dataframes
+CombinedData <- merge(data,arrests,by.x = "statename",by.y = 0) #merged the columns of both the data frames by statename
 CombinedData
 
 Histogram_pop <- ggplot(CombinedData,aes(x=population))+geom_histogram(bins = 5, fill="white", color="black") +labs(x="Population") + ggtitle("Histogram for Population") #displayed a histogram using ggplot and obtimizing number of bins to 5 to resolve gaps in bins
