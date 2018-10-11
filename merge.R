@@ -5,9 +5,9 @@ arrests
 CombinedData <- merge(data,arrests,by.x = "statename",by.y = 0)
 CombinedData
 
-Histogram_pop <- ggplot(data,aes(x=population))+geom_histogram(bins = 5, fill="white", color="black") +labs(x="Population") + ggtitle("Histogram for Population") #displayed a histogram using ggplot and obtimizing number of bins to 5 to resolve gaps in bins
-Histogram_Murder <- ggplot(data,aes(x=Murder))+geom_histogram(bins=15,fill="red", color="black") +labs(x="Murder") + ggtitle("Histogram for Murder Rate") #displayed a histogram using ggplot and obtimizing number of bins to 15 to resolve gaps in bins
-Histogram_Assault <- ggplot(data,aes(x=Assault))+geom_histogram(bins=10,fill="blue", color="black") +labs(x="Assault") + ggtitle("Histogram for Assault") #displayed a histogram using ggplot and obtimizing number of bins to 10 to resolve gaps in bins
+Histogram_pop <- ggplot(CombinedData,aes(x=population))+geom_histogram(bins = 5, fill="white", color="black") +labs(x="Population") + ggtitle("Histogram for Population") #displayed a histogram using ggplot and obtimizing number of bins to 5 to resolve gaps in bins
+Histogram_Murder <- ggplot(CombinedData,aes(x=Murder))+geom_histogram(bins=15,fill="red", color="black") +labs(x="Murder") + ggtitle("Histogram for Murder Rate") #displayed a histogram using ggplot and obtimizing number of bins to 15 to resolve gaps in bins
+Histogram_Assault <- ggplot(CombinedData,aes(x=Assault))+geom_histogram(bins=10,fill="blue", color="black") +labs(x="Assault") + ggtitle("Histogram for Assault") #displayed a histogram using ggplot and obtimizing number of bins to 10 to resolve gaps in bins
 Histogram_PopOver18 <- ggplot(data,aes(x=popover18))+geom_histogram(bins=5,fill="green", color="black") +labs(x="Population Over 18") + ggtitle("Histogram for Population Over 18 years") #displayed a histogram using ggplot and obtimizing number of bins to 5 to resolve gaps in bins
 Histogram_Rape <- ggplot(data,aes(x=Rape))+geom_histogram(bins=15,fill="yellow", color="black") +labs(x="Rape") + ggtitle("Histogram for Rape Rate") ##displayed a histogram using ggplot and obtimizing number of bins to 15 to resolve gaps in bins
 
