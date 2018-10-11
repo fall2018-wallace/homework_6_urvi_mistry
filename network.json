@@ -24,6 +24,16 @@
             ],
             "source": "clean.R",
             "target": "Combine.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "arrests",
+                    "type": "csv"
+                }
+            ],
+            "source": "USArrests.csv",
+            "target": "Combine.R"
         }
     ],
     "nodes": [
@@ -45,6 +55,6 @@
             "name": "USArrests.csv"
         }
     ],
-    "updated_at": "2018-10-11 04:21:00",
+    "updated_at": "2018-10-11 04:21:31",
     "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
 }
