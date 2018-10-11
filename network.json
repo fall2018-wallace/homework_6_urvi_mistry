@@ -104,6 +104,16 @@
             ],
             "source": "merge.R",
             "target": "Bar_Murder.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Bar_Murder2",
+                    "type": "png"
+                }
+            ],
+            "source": "merge.R",
+            "target": "Bar_Murder2.png"
         }
     ],
     "nodes": [
@@ -149,6 +159,6 @@
             "name": "Bar_Murder2.png"
         }
     ],
-    "updated_at": "2018-10-11 05:26:33",
+    "updated_at": "2018-10-11 05:26:40",
     "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
 }
