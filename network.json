@@ -36,10 +36,12 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "urvi15mistry",
             "desc": "",
-            "name": "merge.R"
+            "name": "merge.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-11 04:53:20",
+    "updated_at": "2018-10-11 05:02:56",
     "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
 }
