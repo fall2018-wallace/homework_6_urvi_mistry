@@ -20,7 +20,7 @@ Box_Murder <- ggplot(CombinedData,aes(x=factor(0),Murder)) + geom_boxplot() + la
 #For such a simple data, a simple histogram is the best way without complicating the data
 
 #7)	Calculate the number of murders per state
-CombinedData$numMurders <- CombinedData$population*data$Murder/100000 #Calculate the number of murders
+CombinedData$numMurders <- CombinedData$population*CombinedData$Murder/100000 #Calculate the number of murders
 
 #8)	Generate a bar chart, with the number of murders per state
 Bar_Murder <- ggplot(CombinedData, aes(x=statename, y=numMurders)) + geom_col() + ggtitle("Bar Chart for Murders per state") #display a bar chart with statename on x axis and number of murder on y axis
