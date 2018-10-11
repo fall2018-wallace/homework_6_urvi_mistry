@@ -13,6 +13,17 @@
             ],
             "source": "scprc_est_2017_18_pop_res.csv",
             "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "CensusData",
+                    "output": "clean_data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "Combine.R"
         }
     ],
     "nodes": [
@@ -29,6 +40,6 @@
             "name": "Combine.R"
         }
     ],
-    "updated_at": "2018-10-11 04:19:09",
+    "updated_at": "2018-10-11 04:19:27",
     "url": "https://github.com/fall2018-wallace/homework_6_urvi_mistry"
 }
