@@ -7,6 +7,7 @@ arrests
 CombinedData <- merge(data,arrests,by.x = "statename",by.y = 0) #merged the columns of both the data frames by statename
 CombinedData
 
+#4)	Create a histogram using GGPLOT for the population and a different histogram for the murder rate
 Histogram_pop <- ggplot(CombinedData,aes(x=population))+geom_histogram(bins = 5, fill="white", color="black") +labs(x="Population") + ggtitle("Histogram for Population") #displayed a histogram using ggplot and obtimizing number of bins to 5 to resolve gaps in bins
 Histogram_Murder <- ggplot(CombinedData,aes(x=Murder))+geom_histogram(bins=15,fill="red", color="black") +labs(x="Murder") + ggtitle("Histogram for Murder Rate") #displayed a histogram using ggplot and obtimizing number of bins to 15 to resolve gaps in bins
 Histogram_Assault <- ggplot(CombinedData,aes(x=Assault))+geom_histogram(bins=10,fill="blue", color="black") +labs(x="Assault") + ggtitle("Histogram for Assault") #displayed a histogram using ggplot and obtimizing number of bins to 10 to resolve gaps in bins
